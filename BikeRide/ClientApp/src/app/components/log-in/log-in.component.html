@@ -1,0 +1,26 @@
+<body>
+    <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+    <mat-card class="box">
+      <mat-card-header>
+        <img class="md-card-image" src="..\..\..\images\avatar.png" alt="Login">
+      </mat-card-header> 
+  
+      <form class="example-form">
+        <mat-card-content>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="First & Second Name">
+          </mat-form-field>
+  
+          <mat-form-field>
+                <input matInput [matDatepicker]="myDatepicker" placeholder="Date of Birth">
+                <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+                <mat-datepicker #myDatepicker></mat-datepicker>
+              </mat-form-field>
+        </mat-card-content>
+        <button mat-stroked-button color="black" class="btn-block">Log in</button>
+      </form>
+    </mat-card>
+  
+  </div>
+</body>
