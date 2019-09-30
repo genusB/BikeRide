@@ -1,4 +1,5 @@
 using BikeRide.Service;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,6 +30,15 @@ namespace BikeRide
 
             var users = new Dictionary<string, string> { { "YanaKutsko", "1092002" } };
             services.AddSingleton<IUserService>(new UserService(users));
+
+            services.AddAuthentication(options => {
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            })
+                .AddCookie(options => {
+                    options.LoginPath = "/auth/login";
+                });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -49,6 +59,8 @@ namespace BikeRide
             {
                 app.UseSpaStaticFiles();
             }
+
+            app.UseAuthentication();
 
             app.UseRouting();
 

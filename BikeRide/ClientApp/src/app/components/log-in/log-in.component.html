@@ -9,16 +9,14 @@
       <form class="example-form">
         <mat-card-content>
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="First & Second Name">
+            <input [(ngModel)]="signInModel.username" [ngModelOptions]="{standalone: true}" matInput placeholder="First & Second Name">
           </mat-form-field>
   
           <mat-form-field>
-                <input matInput [matDatepicker]="myDatepicker" placeholder="Date of Birth">
-                <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
-                <mat-datepicker #myDatepicker></mat-datepicker>
-              </mat-form-field>
+                <input [(ngModel)]="signInModel.password" [ngModelOptions]="{standalone: true}" matInput placeholder="Date of Birth">
+          </mat-form-field>
         </mat-card-content>
-        <button mat-stroked-button color="black" class="btn-block">Log in</button>
+        <button mat-stroked-button color="black" class="btn-block" (click)="login()">Log in</button>
       </form>
     </mat-card>
   
