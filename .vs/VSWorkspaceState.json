@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\AuthServer",
+    "\\src\\Spa\\oauth-client",
+    "\\src\\Spa\\oauth-client\\e2e",
+    "\\src\\Spa\\oauth-client\\src\\assets"
+  ],
+  "SelectedNode": "\\src\\AuthServer\\AuthServer.sln",
+  "PreviewInSolutionExplorer": false
+}

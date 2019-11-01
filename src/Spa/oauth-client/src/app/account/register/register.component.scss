@@ -1,0 +1,30 @@
+body {
+    background-image:url(../../../assets/images/loginLandscape.png);
+    background-color: rgb(190, 220, 230);
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    min-height:100vh;
+    font-family:'Roboto', sans-serif;
+}
+
+.regForm {
+    margin: 150px 0px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: aliceblue;
+    opacity: 0.9;
+}
+
+img {
+    width: 50%;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(72, 156, 110);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}

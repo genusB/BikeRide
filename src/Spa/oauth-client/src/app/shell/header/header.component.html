@@ -1,0 +1,22 @@
+<header> 
+  <div class="navbar box-shadow">
+    <div class="container d-flex justify-content-between">
+      <a routerLink="/" class="navbar-brand d-flex align-items-center">
+        <strong>Dadomu</strong>
+      </a>
+      <nav *ngIf="!isAuthenticated" class="my-2 my-md-0 mr-md-3">
+        <ul class="nav_links">
+          <li><a class="p-2 text-light" routerLink="/register">Sihnap</a></li>
+          <li><a class="p-2 text-light" routerLink="/login">Łahin</a></li>  
+        </ul>
+      </nav>
+      <nav *ngIf="isAuthenticated" class="my-2 my-md-0 mr-md-3">
+        <ul class="nav_links">
+          <li><a class="p-2 text-light" routerLink="/map">Karta padarožža</a></li>
+          <li><a class="p-2 text-light" routerLink="/topsecret">Kłejmy</a></li>
+          <li><a class="p-2 text-light" (click)="signout()" href="#">Sihnaut {{name}}</a></li>
+        </ul>           
+      </nav>
+    </div>    
+  </div>
+</header>
