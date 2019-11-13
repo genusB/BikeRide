@@ -5,6 +5,9 @@
 <pre><code>AuthServer.Infrastructure> dotnet ef database update --context AppIdentityDbContext</code></pre>
 <pre><code>AuthServer.Infrastructure> dotnet ef database update --context PersistedGrantDbContext</code></pre>
 
+Or update it manualy from Package Manager Console
+<pre><code>Update Database</code></pre>
+
 **3.** Install Angular CLI if necessary. `npm install -g @angular/cli`
 
 **4.** Install Angular SPA dependencies.
@@ -13,9 +16,9 @@
 **5.** Run the Angular CLI dev server to build and run the Angular app.
 <pre><code>Spa\oauth-client> ng serve</code></pre> This must be running on the default http://localhost:4200
 
-**6.** Build/Run the `AuthServer.sln` solution using your preferred method: Visual Studio,  VSCode, dotnet CLI. This must be running on http://localhost:5000
+**6.** Build/Run the `AuthServer.sln` solution. This must be running on http://localhost:5000
 
-**7.** Build/Run the `Resource.Api.sln` solution using your preferred method: Visual Studio,  VSCode, dotnet CLI. This must be running on http://localhost:5050
+**7.** Build/Run the `Resource.Api.sln` solution. This must be running on http://localhost:5050
 
 **8.** Point a browser to `http://localhost:4200` to access the Angular client.
 
