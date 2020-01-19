@@ -11,13 +11,13 @@ import { TopSecretService } from '../top-secret.service';
 })
 export class IndexComponent implements OnInit {
 
-  claims = null;
+  claims=null;
   busy: boolean;
 
   constructor(private authService: AuthService, private topSecretService: TopSecretService, private spinner: NgxSpinnerService) {
   }
 
-  ngOnInit() {
+  ngOnInit() {    
     this.busy = true;
     this.spinner.show();
     this.topSecretService.fetchTopSecretData(this.authService.authorizationHeaderValue)
@@ -25,7 +25,7 @@ export class IndexComponent implements OnInit {
       this.spinner.hide();
       this.busy = false;
     })).subscribe(
-    result => {
+    result => {         
       this.claims = result;
    });
   }

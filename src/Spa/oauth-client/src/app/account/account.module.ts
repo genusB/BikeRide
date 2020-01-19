@@ -15,7 +15,7 @@ import { AuthService }  from '../core/authentication/auth.service';
     CommonModule,
     FormsModule,
     AccountRoutingModule,
-    SharedModule  
+    SharedModule
   ]
 })
 export class AccountModule { }

@@ -1,9 +1,11 @@
 body {
     background-image:url(../../../assets/images/loginLandscape.png);
+    background-position: center center;
     background-color: rgb(190, 220, 230);
     background-position: center;
     background-size:cover;
     background-repeat:no-repeat;
+    background-attachment: fixed;
     min-height:100vh;
     font-family:'Roboto', sans-serif;
 }

@@ -10,11 +10,12 @@ import { ConfigService } from '../shared/config.service';
 
 export class TopSecretService extends BaseService {
 
-  constructor(private http: HttpClient, private configService: ConfigService) {
-    super();
+  constructor(private http: HttpClient, private configService: ConfigService) {    
+    super();      
   }
 
-  fetchTopSecretData(token: string) {
+  fetchTopSecretData(token: string) {   
+    
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type':  'application/json',
