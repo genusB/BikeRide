@@ -1,0 +1,237 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body {
+    background-image:url(../../../assets/images/real_places/japan.jpg);
+    background-position: center center;
+    background-color: rgb(190, 220, 230);
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    min-height:100vh;
+}
+
+.girl {
+    width: 22%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    animation-name: popup;
+    animation-duration: 1.5s;  
+    animation-fill-mode: forwards;
+    
+}
+
+.message1 {
+    position: relative;
+    margin-left: 10%;
+    margin-top: -45%;
+    visibility: hidden;
+
+    animation-name: mes;
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.textblock1 {
+    font-size: 1.3vw;
+    position: absolute;
+    bottom: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+.message2 {
+    position: relative;
+    margin-left: 3%;
+    visibility: hidden;
+
+    animation-name: mes;
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+.img1{
+    width: 35%;
+    height: auto;
+}
+
+.img2{
+    transform: scaleX(-1);
+    width: 30%;
+    height: auto;
+}
+.textblock2 {
+    font-size: 1.3vw;
+    position: absolute;
+    bottom: 30%;
+    margin-left: 5%;
+
+}
+
+
+@keyframes popup {
+    0% {
+        top: 900px;
+    }
+    90% {
+        top: 20px;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+@keyframes popup2 {
+    0% {
+        margin-top: 50%;
+    }
+    90% {
+        margin-top: 30%;
+    }
+    100% {
+        margin-top: 35%;
+    }
+}
+
+@keyframes popup3 {
+    0% {
+        margin-top: 30%;
+    }
+    90% {
+        margin-top: 0%;
+    }
+    100% {
+        margin-top: 5%;
+    }
+}
+
+@keyframes mes {
+    from {
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .textblock1 {
+        font-size: 12px;
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+    .textblock2 {
+        font-size: 12px;
+        margin-left: 5%;
+        margin-top: 7%;
+    }
+    .girl {
+        width: 50%;
+        margin-top: 40%;
+        
+    }
+    .message1{
+        width: 140%; 
+        height: auto; 
+        margin-left: 2%;
+        margin-top: -140%;  
+    }
+    .message2{
+        width: 140%;
+        height: auto;   
+
+    }
+    .img1 {
+        width: 60%;
+    }
+    .img2 {
+        width: 40%;
+    }
+  }
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .message1 {
+        margin-top: -40%;
+        margin-left: 0%;
+    }
+    .img1 {
+        width: 30%;
+    }
+    .img2 {
+        width: 20%;
+    }
+    .girl {
+        width: 20%;
+        margin-top: 0%;
+        animation-name: popup3;
+    }
+    .textblock1, .textblock2 {font-size: 12px;}
+
+    .textblock1 {
+        margin-left: 2%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+    .girl {
+        width: 40%;
+        margin-top: 40%;
+        animation-name: popup2;
+    }
+    .message1 {
+        margin-top: -120%;
+        margin-left: 10%;
+    }
+    .message2 {
+        margin-left: 0%;
+    }
+
+    .img1 {
+        width: 70%;
+    }
+    .img2 {
+        width: 60%;
+    }
+    .textblock1, .textblock2 {font-size: 21px;}
+
+    .textblock1 {
+        margin-left: 5%;
+    }
+    .textblock2 {
+        margin-left: 10%;
+    }
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1400px) and (orientation: landscape) {
+    
+    .message1 {
+        margin-top: -60%;
+        margin-left: 0%;
+    }
+    .img1 {
+        width: 40%;
+    }
+    .img2 {
+        width: 30%;
+    }
+    .girl {
+        width: 30%;
+        margin-top: 0%;
+        animation-name: popup3;
+    }
+    .textblock1, .textblock2 {font-size: 14px;}
+
+    .textblock1 {
+        margin-left: 2%;
+    }
+}
