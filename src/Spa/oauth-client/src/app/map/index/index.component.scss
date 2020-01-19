@@ -1,8 +1,189 @@
 body {
     background-image:url(../../../assets/images/mapLandscape.png);
+    background-position: right right;;
     background-color: rgb(190, 220, 230);
-    background-position: center;
     background-size:cover;
     background-repeat:no-repeat;
+    background-attachment: fixed;
     min-height:100vh;
+    
+}
+.btn1{
+    display:inline-block;
+    width: 4%;
+    margin: 7% 0% 0% 20%;
+    transition: all 0.2s;
+}
+
+.btn2{
+    display:inline-block;
+    width: 4%;
+    margin: 10% 0% 0% 25%;
+    transition: all 0.2s;
+}
+
+.btn3{
+    display:inline-block;
+    width: 4%;
+    margin: 12% 0% 0% 24%;
+    transition: all 0.2s;
+}
+
+.btn4{
+    display:inline-block;
+    width: 4%;
+    margin: 15% 0% 0% 90%;
+    transition: all 0.2s;
+}
+
+.btn5{
+    display:inline-block;
+    width: 4%;
+    margin: -10% 0% 0% 70%;
+    transition: all 0.2s;
+}
+
+.btn6{
+    display:inline-block;
+    width: 4%;
+    margin: -10% 0% 0% 30%;
+    transition: all 0.2s;
+}
+
+@media (min-width:768px) and (max-width: 1400px) {
+
+    div {
+        display: inline-block;
+        margin-top: 30%;
+        margin-left: 30%;
+        position: fixed;
+    }
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+        width: 20%;
+        transition: all 0.2s;
+        }
+    .btn1 {margin: 10% 0% 0% 40%;}
+    .btn2 {margin: 20% -30% 0% 50%;}
+    .btn3 { margin: -30% -30% 20% 150%;}
+    .btn4 {margin: 110% 0% 0% 155%;}
+    .btn5 {margin: -40% 0% 0% 130%;}
+    .btn6 {margin: -40% 0% 0% 100%;}
+}
+
+@media (min-width:769px) and (max-width: 1400px) and (orientation: landscape) {
+
+    div {
+        display: inline-block;
+        margin-top: 15%;
+        margin-left: 30%;
+        position: fixed;
+    }
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+        width: 20%;
+        transition: all 0.2s;
+        }
+    .btn1 {margin: 0% 0% 0% 40%;}
+    .btn2 {margin: -13% 0% 0% 130%;}
+    .btn3 {margin: -25% 0% 20% 190%;}
+    .btn4 {margin: 60% 0% 0% 220%;}
+    .btn5 {margin: -40% 0% 0% 125%;}
+    .btn6 {margin: -40% 0% 0% 50%;}
+}
+
+@media (max-width: 768px) {
+    div {
+        display: inline-block;
+        margin-top: -10%;
+        margin-left: 10%;
+        position: fixed;
+    }
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+        width: 13%;
+        transition: all 0.2s;
+        }
+    .btn1 {margin: 20% 0% 0% 0%;}
+    .btn2 {margin: 30% 0% 0% 30%;}
+    .btn3 {margin: -8% 0% 0% 85%;}
+    .btn4 {margin: 20% 0% 0% 75%;}
+    .btn5 {margin: -10% 0% 0% 40%;}
+    .btn6 {margin: 5% 0% 0% -40%;}
+}
+
+@media (width: 768px) {
+    div {
+        margin-top: 10%;
+    }
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+        width: 15%;
+    }
+    .btn1 {margin: 20% 0% 0% 80%;}
+    .btn2 {margin: -13% 0% 0% 120%;}
+    .btn3 {margin: -13% 0% 0% 155%;}
+    .btn4 {margin: 100% 0% 0% 160%;}
+    .btn5 {margin: -20% 0% 0% 140%;}
+    .btn6 {margin: -30% 0% 0% 120%;}
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    div {
+        display: inline-block;
+        margin-top: 0%;
+        margin-left: 30%;
+        position: fixed;
+    }
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+        width: 8%;
+        transition: all 0.2s;
+        }
+    .btn1 {margin: -25% 0% -20% 10%;}
+    .btn2 {margin: -25% 0% -30% 40%;}
+    .btn3 {margin: -20% 0% -20% 85%;}
+    .btn4 {margin: 25% 0% -7% 80%;}
+    .btn5 {margin: -15% 0% 0% 45%;}
+    .btn6 {margin: 0% 0% 10% -40%;}
+}
+
+@media (min-width: 812px) and (max-width: 1024px) and (orientation: landscape) {
+    div {
+        display: inline-block;
+        margin-top: -15%;
+        margin-left: 30%;
+        position: fixed;
+    }
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+        width: 10%;
+        transition: all 0.2s;
+        }
+    .btn1 {margin: -6% 0% -20% 10%;}
+    .btn2 {margin: -5% 0% -30% 40%;}
+    .btn3 {margin: -3% 0% -20% 110%;}
+    .btn4 {margin: 25% 0% -15% 80%;}
+    .btn5 {margin: -15% 0% 0% 45%;}
+    .btn6 {margin: 0% 0% 10% -40%;}
+}
+
+@media (min-width: 812px) and (max-width: 823px) {
+    div {
+        margin-top: 0%;   
+    }
+}
+
+@media (width: 1024px) and (orientation: landscape) {
+    div {
+        display: inline-block;
+        margin-top: 15%;
+        margin-left: 30%;
+        position: fixed;
+    }
+    .btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+        width: 12%;
+        transition: all 0.2s;
+        }
+    .btn1 {margin: -15% 0% -20% 0%;}
+    .btn2 {margin: -15% 0% -30% 50%;}
+    .btn3 {margin: -10% 0% -20% 110%;}
+    .btn4 {margin: 80% 0% -15% 160%;}
+    .btn5 {margin: -15% 0% 0% 80%;}
+    .btn6 {margin: 0% 0% 10% -60%;}
+
 }

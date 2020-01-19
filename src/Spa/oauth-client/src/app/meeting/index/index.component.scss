@@ -1,13 +1,188 @@
 body {
-    background-image:url(../../../assets/images/meetingLandscape.png);
+    background-image:url(../../../assets/images/loginLandscape.png);
+    background-position: center center;
     background-color: rgb(190, 220, 230);
     background-position: center;
     background-size:cover;
     background-repeat:no-repeat;
+    background-attachment: fixed;
     min-height:100vh;
 }
 
 .btn {
-    width: 37%;
-    margin: 45em 0em 0em 36em ;
+    position: fixed;
+    font-size: 1.6vw;
+    width: 34%;
+    margin-right: auto;
+    margin-left: 3%;
+    margin-top: 35%;
+    padding: 9px 15px;  
+    background-color:white; 
+    border: none;
+    border-radius: 40px;
 }
+
+.girl {
+    margin-left: 10%;
+    width: 20%;
+
+    animation-name: popup;
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;
+    position: fixed;
+}
+
+.message1 {
+    margin-left: 20%;
+    margin-top: 5%;
+    visibility: hidden;
+    position: fixed;
+
+    animation-name: mes;
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.img1{
+    width: 35%;
+    height: auto;
+    position: fixed;
+}
+
+
+.textblock1 {
+    font-size: 1.6vw;
+    position: fixed;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 7%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    position: fixed;
+}
+
+@keyframes mes {
+    from {
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes popup {
+    from {
+        margin-left: -6%;
+    }
+    to {
+        margin-left: 3%;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1400px)  {
+
+    .message1 {    
+        margin-top: 50%;
+    }
+    .img1 {
+        width: 50%;
+        margin-top: -30%;
+        margin-left: 20%;
+    }
+    .girl {
+        width: 50%;
+    }
+    
+    .btn {
+        font-size: 25px;
+        margin-top: 20%;
+        margin-left: 30%;
+        width: 40%;
+    }
+    .textblock1 {
+        font-size: 22px;
+        margin-top: -20%;
+        margin-left: 32%;
+    }
+      
+}
+@media (min-width:768px) and (max-width: 1400px) and (orientation: landscape) {
+    .message1 {    
+        margin-top: -30%;
+    }
+    .img1 {
+
+        width: 45%;
+        margin-left: 5%;
+        margin-top: 40%;
+    }
+    .girl {
+        width: 30%;
+    }
+    .btn {
+        
+        width: 40%;
+        margin-left: 12%;
+        margin-top: 85%;
+    
+    }
+    .textblock1 {
+        margin-left: 16%;
+        margin-top: 45%;
+    }
+      
+}
+
+@media (max-width: 767px) {
+    .message1 {    
+        margin-top: -35%;
+    }
+    .img1 {
+        width: 60%;
+        margin-top: 50%;
+        margin-left: 20%;
+    }
+    .girl {
+        width: 50%;
+    }
+    .textblock1 {
+        font-size: 3vw;
+        margin-left: 40%;
+        margin-top: 54%;
+    }
+    .btn {
+        margin-top: 110%;
+        margin-left: 35%;
+        font-size: 3vw;
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 812px) and (orientation: landscape) {
+    .message1 {
+        margin-top: -60%;
+    }
+    .img1 {
+        width: 35%;
+        margin-top: 50%;
+        margin-left: 0%;
+    }
+    .girl {
+        width: 20%;
+        margin-top: -10%;
+    }
+    .textblock1 {
+        font-size: 1.8vw;
+        margin-top: 55%;
+        margin-left: 8%;
+    }
+    .btn {
+        margin-top: 85%;
+        margin-left: 10%;
+        font-size: 2vw;
+        width: 20%;
+    }
+}
+      

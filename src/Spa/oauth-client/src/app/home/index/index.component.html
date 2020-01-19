@@ -1,9 +1,13 @@
+<head>
+  <meta charset="utf-8">
+  <meta  content="width=device-width, initial-scale=1" >
+</head>
 <body>
-  <a routerLink="/register" role="button"><img class="btnReg" src="../../../assets/images/buttons/balls/registr.png"/></a>
-  <a routerLink="/login" role="button"><img class="btnLog" src="../../../assets/images/buttons/balls/login.png"/></a>
-  <nav *ngIf="isAuthenticated">
-    <a routerLink="/meeting" role="button"><img class="btnTop" src="../../../assets/images/buttons/balls/topSec.png"></a>
-  </nav>
+  <div class="container">
+    <a routerLink="/register" role="button"><img class="btn" src="../../../assets/images/buttons/balls/registr.png"/></a>
+    <a routerLink="/login" role="button"><img class="btn" src="../../../assets/images/buttons/balls/login.png"/></a>
+    <a routerLink="/meeting" role="button" *ngIf="isAuthenticated"><img class="btn" src="../../../assets/images/buttons/balls/topSec.png"></a>
+  </div>
 </body>
 
  

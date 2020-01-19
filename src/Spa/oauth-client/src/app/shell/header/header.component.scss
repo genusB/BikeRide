@@ -12,6 +12,8 @@
 
 header {
     background-image: url("../../../assets/images/navbar.png");
+    background-color: rgb(190, 220, 230);
+    
 }
 
 li, a, button {
@@ -80,5 +82,12 @@ li {
 
 strong:hover {
     background-color: rgba(0,136,169,0.8);
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .nav_links li {
+        display: inline-block;
+        padding: 3px 10px;
+    }
 }
 
