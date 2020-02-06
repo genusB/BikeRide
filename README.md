@@ -7,7 +7,7 @@
 <pre><code>AuthServer.Infrastructure> dotnet ef database update --context PersistedGrantDbContext</code></pre>
 
 Or update it manualy from Package Manager Console
-<pre><code>Update Database</code></pre>
+<pre><code>Update-Database</code></pre>
 
 **3.** Install Angular CLI if necessary. `npm install -g @angular/cli`
 
