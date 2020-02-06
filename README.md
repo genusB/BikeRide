@@ -7,7 +7,8 @@
 <pre><code>AuthServer.Infrastructure> dotnet ef database update --context PersistedGrantDbContext</code></pre>
 
 Or update it manualy from Package Manager Console
-<pre><code>Update-Database</code></pre>
+<pre><code>Update-Database -Context "AppIdentityDbContext"</code></pre>
+<pre><code>Update-Database -Context "PersistedGrantDbContext"</code></pre>
 
 **3.** Install Angular CLI if necessary. `npm install -g @angular/cli`
 
@@ -17,7 +18,7 @@ Or update it manualy from Package Manager Console
 **5.** Run the Angular CLI dev server to build and run the Angular app.
 <pre><code>Spa\oauth-client> ng serve</code></pre> This must be running on the default http://localhost:4200
 
-**6.** Build/Run the `AuthServer.sln` solution. This must be running on http://localhost:5000
+**6.** Build/Run the `AuthServer.sln` solution. If nessesary, switch StartUp Project to AuthServer. This must be running on http://localhost:5000
 
 **7.** Build/Run the `Resource.Api.sln` solution. This must be running on http://localhost:5050
 
