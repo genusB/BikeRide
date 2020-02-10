@@ -21,24 +21,24 @@ export class AuthService extends BaseService  {
   private user: User | null;
 
   constructor(private http: HttpClient, private configService: ConfigService) { 
-    super();     
-    
-    this.manager.getUser().then(user => { 
-      this.user = user;      
+    super();
+
+    this.manager.getUser().then(user => {
+      this.user = user;
       this._authNavStatusSource.next(this.isAuthenticated());
     });
   }
 
   login() { 
-    return this.manager.signinRedirect();   
+    return this.manager.signinRedirect();
   }
 
   async completeAuthentication() {
       this.user = await this.manager.signinRedirectCallback();
-      this._authNavStatusSource.next(this.isAuthenticated());      
-  }  
+      this._authNavStatusSource.next(this.isAuthenticated());
+  }
 
-  register(userRegistration: any) {    
+  register(userRegistration: any) {
     return this.http.post(this.configService.authApiURI + '/account', userRegistration).pipe(catchError(this.handleError));
   }
 
